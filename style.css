@@ -1,0 +1,375 @@
+body {
+	background: url(Images/icon_images/Red_BG.jpg) no-repeat center center fixed;
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	padding: 2% 0px 5% 0px;
+}
+#top {
+	position: center;
+	border: none;
+	height: 100%;
+	width: 100%;
+	margin: 0px auto;
+}
+#logo {
+	width: 100%;
+	margin: 0px auto;
+	padding: 0;
+	text-align: center;
+}
+#logo img {
+	transform: scale(0.7);
+	width: 100%;
+}
+#menu {
+	overflow: hidden;
+	width: 100%;
+}
+#list {
+	margin: 0px auto;
+	width: 100%;
+	padding: 0;
+}
+#list p {
+	width: 30px;
+	margin: 0px auto;
+	color: white;
+	font-style: oblique;
+	font-weight: 100;
+	font-size: 40px;
+	display: inline-block;
+	list-style-type: none;
+	text-align: center;
+}
+@media screen and (max-width: 959px) {
+	#list p {
+		width: 30px
+	}
+}
+@media screen and (max-width: 640px) {
+	#list p {
+		width: 30px
+	}
+}
+@media screen and (max-width: 450px) {
+	#list p {
+		width: 200px
+	}
+}
+#list ul {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+#list li {
+	display: inline-block;
+	width: 100px;
+	float: none;
+	margin: 10px 50px;
+	list-style-type: none;
+	text-align: center;
+}
+.blinking {
+	-webkit-animation:blink 0.2s step-start infinite alternate;
+	-moz-animation:blink 0.2s step-start infinite alternate;
+	animation:blink 0.2s step-start infinite alternate;
+	animation-play-state: paused;
+	animation-fill-mode: none;
+	-webkit-animation-fill-mode: none;
+	animation-iteration-count: 2;
+}
+@-webkit-keyframes blink{
+	34%,66%,100% {opacity: 0;}
+	0%,33%,67%,99% {opacity: 1;}
+}
+@-moz-keyframes blink{
+	34%,66%,100% {opacity: 0;}
+	0%,33%,67%,99% {opacity: 1;}
+}
+@keyframes blink{
+	34%,66%,100% {opacity: 0;}
+	0%,33%,67%,99% {opacity: 1;}
+}
+.blinking:hover {
+	animation-play-state: running;
+	animation-iteration-count: infinite;
+}
+#list a {
+	width: 100px;
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	font-size: 20px;
+	margin: 0 auto;
+	text-decoration: none;
+	color: white;
+	text-align: center;
+}
+.footer-text {
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	font-size: 12px;
+	color: white;
+}
+.footer {
+	padding: 150px 0 0 0;
+	position: initial;
+	width: 400px;
+	float: right;
+	text-align: right;
+	vertical-align: bottom;
+	right: 0;
+	bottom: 0;
+}
+.info01 {
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	font-size: 12px;
+	color: white;
+}
+
+
+
+
+
+
+
+
+
+#main-features {
+	width: 90%;
+	text-align: center;
+	margin: 0 auto;
+}
+.modal {
+	display: none;
+	vertical-align: middle;
+	position: relative;
+	z-index: 2;
+	max-width: 800px;
+	box-sizing: initial;
+	width: 90%;
+	background: #fff;
+	padding: 0px 3% 50px 3%;
+	margin: 0 auto;
+	border-radius: 0px;
+	text-align: center;
+	border-radius: 4px;
+}
+@media screen and (max-width: 959px) {
+	.modal {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.modal {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 450px) {
+	.modal {
+		width: 100%;
+	}
+}
+.blocker {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    z-index: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #000;
+    background-color: rgba(0,0,0,0.75);
+    text-align: center;
+}
+.modal a.close-modal {
+	display: none;
+    position: absolute;
+    top: -12.5px;
+    right: -12.5px;
+    width: 30px;
+    height: 30px;
+    text-indent: -9999px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: none;
+}
+.modal a.close-modal2 {
+	width: 80px;
+	height: 80px;
+	margin: 0px 0px 30px 0px;
+	padding: 0 auto;
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+    float: right;
+    color: red;
+    text-decoration: none;
+    font-size: 100px;
+}
+.modal p {
+	text-align: left;
+	width: 100%;
+	display: block;
+	margin: 0px auto;
+	padding: 0 auto;
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	float: left;
+}
+.inner {
+	width: 100%
+	padding-top: 10%;
+}
+.modal iframe {
+	position: relative;
+	margin: 0px auto;
+	padding: 0 auto;
+	width: 100%;
+}
+.modal img {
+	position: relative;
+	margin: 0px auto;
+	padding: 0 auto;
+	width: 100%;
+}
+.section {
+	margin: 0 auto;
+	padding: 0 auto;
+	display: inline-block;
+	text-align: center;
+	width: 45%;
+}
+@media screen and (max-width: 959px) {
+	.section {
+		width: 550px
+	}
+}
+@media screen and (max-width: 640px) {
+	.section {
+		width: 500px
+	}
+}
+@media screen and (max-width: 400px) {
+	.section {
+		width: 100%
+	}
+}
+.section img {
+	width: 100%;
+	opacity: 1;
+	margin: 0 auto;
+	padding: 0 auto;
+}
+.section img:hover {
+	opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+#profile {
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+}
+#profile img {
+	width: 500px;
+	margin: 10% 10% 4% 10%;
+	float: none;
+}
+@media screen and (max-width: 959px) {
+	#profile img {
+		width: 50%
+	}
+}
+@media screen and (max-width: 640px) {
+	#profile img {
+		width: 80%
+	}
+}
+@media screen and (max-width: 320px) {
+	#profile img {
+		width: 130%
+	}
+}
+#aboutme {
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+}
+#aboutme p {
+	color: white;
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	font-size: 15px;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+	text-align: center;
+	line-height: 30px;
+}
+#AboutTop {
+	width: 100%;
+	height: 100%;
+}
+
+
+
+
+
+
+
+
+
+#ContactTop {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 0 300px 0;
+}
+#contact {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	padding: 10% 0 0 0;
+}
+#contact p {
+	color: white;
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	font-size: 15px;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+	text-align: center;
+	line-height: 30px;
+}
+#contact a {
+	color: white;
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	font-size: 15px;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+	text-align: center;
+	line-height: 30px;
+}

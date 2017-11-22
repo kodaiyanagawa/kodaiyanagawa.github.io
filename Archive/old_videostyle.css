@@ -1,0 +1,178 @@
+#main-features {
+	width: 92%;
+	text-align: center;
+	margin: 0 auto;
+}
+.modal {
+	margin: 0 auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1000px;
+	border-radius: 0px;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	-ms-border-radius: 0px;
+}
+@media screen and (max-width: 959px) {
+	.modal {
+		width: 90%;
+		left: 10%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.modal {
+		width: 80%
+		left: 0%;
+	}
+}
+@media screen and (max-width: 450px) {
+	.modal {
+		width: 100%
+		left: 0%;
+	}
+}
+.section {
+	text-align: center;
+	width: 45%;
+}
+@media screen and (max-width: 959px) {
+	.section {
+		width: 550px
+	}
+}
+@media screen and (max-width: 640px) {
+	.section {
+		width: 500px
+	}
+}
+@media screen and (max-width: 400px) {
+	.section {
+		width: 100%
+	}
+}
+.section img {
+	width: 100%;
+}
+#demoreelmodal {
+	display: none;
+	width: 70%;
+	height: 80%;
+	margin: 0px auto;
+	padding: 0px;
+	text-align: center;
+	overflow: auto;
+	z-index: 2;
+	top: 10%;
+	left: 15%;
+	position: fixed;
+	background: grey;
+}
+@media screen and (max-width: 959px) {
+	#demoreelmodal {
+		width: 90%;
+		left: 10%;
+	}
+}
+@media screen and (max-width: 640px) {
+	#demoreelmodal {
+		width: 80%
+		left: 0%;
+	}
+}
+@media screen and (max-width: 450px) {
+	#demoreelmodal {
+		width: 100%
+		left: 0%;
+	}
+}
+#demoreel-section {
+	padding: 0 auto;
+	margin: 0px auto;
+	float: left;
+	width: 45%;
+	text-align: center;
+}
+@media screen and (max-width: 959px) {
+	#demoreel-section {
+		width: 350px
+	}
+}
+@media screen and (max-width: 640px) {
+	#demoreel-section {
+		width: 300px
+	}
+}
+@media screen and (max-width: 320px) {
+	#demoreel-section {
+		width: 100%
+	}
+}
+#demoreel-section p {
+	color: white;
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	font-size: 15px;
+	margin: 0 auto;
+	padding: 0px auto;
+}
+#demoreelbutton {
+	margin: 0px auto;
+	padding: 0px auto;
+	width: 100%;
+}
+#demoreelbutton:hover {
+	opacity: 0.7;
+}
+
+.modal-content {
+	width: 70%;
+	display: block;
+	padding: 0px;
+	margin: 0px auto;
+	text-align: center;
+}
+#demoreelcaption {
+	display: block;
+	font-style: oblique;
+	font-family: Avenir;
+	font-weight: lighter;
+	color: white;
+	padding: 0px auto;
+	width: 100%;
+	float: left;
+	margin: 0px auto;
+}
+.captions {
+	display: block;
+	font-style: oblique;
+	font-family: Avenir;
+	font-weight: lighter;
+	color: white;
+	padding: 0px auto;
+	width: 100%;
+	float: left;
+	margin: 0px auto;
+}
+#demoreellink {
+	width: 100%;
+	padding: 10% 0 0 0;
+	text-align: center;
+	margin: 0px auto;
+}
+.close {
+	padding: 0px auto;
+	margin: 0px auto;
+	color: white;
+	float: right;
+	font-size: 50px;
+	font-weight: lighter;
+	font-family: Avenir;
+}
+.close:hover,
+.close:focus {
+	color: red;
+	text-decoration: none;
+	cursor: pointer;
+}

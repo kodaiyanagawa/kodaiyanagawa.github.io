@@ -1,0 +1,34 @@
+#ContactTop {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 0 0 300px 0;
+}
+#contact {
+	width: 100%;
+	height: 100%;
+	margin: 0px auto;
+	padding: 10% 0 0 0;
+}
+#contact p {
+	color: white;
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	font-size: 15px;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+	text-align: center;
+	line-height: 30px;
+}
+#contact a {
+	color: white;
+	font-family: Avenir;
+	font-style: oblique;
+	font-weight: lighter;
+	font-size: 15px;
+	margin: 0px 0px 50px 0px;
+	padding: 0px;
+	text-align: center;
+	line-height: 30px;
+}

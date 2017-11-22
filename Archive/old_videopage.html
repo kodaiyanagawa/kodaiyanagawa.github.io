@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kodai Yanagawa Video</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="videostyle.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+	<style>
+		.modal {
+			padding: 0;
+			border-radius: 0;
+		}
+	</style>
+</head>
+<body>
+	<div id="menu" class="page">
+		<div id="list">
+			<ul>
+				<li class="blinking"><a href="index.html">Home</a>
+				</li>
+				<p>/</p>
+				<li class="blinking"><a href="videopage.html">Video</a>
+				</li>
+				<p>/</p>
+				<li class="blinking"><a href="#">Artworks</a>
+				</li>
+				<p>/</p>
+				<li class="blinking"><a href="aboutpage.html">About</a>
+				</li>
+				<p>/</p>
+				<li class="blinking"><a href="contactpage.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<hr width="90%" align="center" color="white" size="1">
+	<div id="main-features">
+		<div id="demoreel-section">
+			<img id="demoreelbutton" src="Images/2017Demoreel.png" alt="2017 Demoreel">
+			<p id="demoreelcaption">2017 Demoreel</p>
+		</div>
+
+		<div id="demoreelmodal">
+			<span id="demoreelclose" class="close">&times;</span>
+			<div class="modal-content">
+				<iframe id="demoreellink" src="https://player.vimeo.com/video/202174201" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="Movie"></iframe>
+				<p class="captions">2017 Demoreel</p>
+			</div>
+		</div>
+
+	<div>
+		<a href="#vid-2" rel="modal:open"><img style="max-width: 350px; width: 100%;" src="Images/2017Demoreel.png" alt="2017 Demoreel"></a>
+		<div id="vid-2" class="modal">
+			<iframe src="https://player.vimeo.com/video/202174201" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="Movie"></iframe>
+			<p>This is an explanation</p>
+		</div>
+	</div>
+
+
+
+<script type="text/javascript">
+var modal = document.getElementById('demoreelmodal');
+
+var img = document.getElementById('demoreelbutton');
+var ifrm = document.getElementById("demoreellink");
+var captionText = document.getElementById("demoreelcaption");
+img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+span.onclick = function pause() {
+  $('#demoreellink').attr("src", "https://player.vimeo.com/video/202174201");
+  modal.style.display = "none";
+  return false;
+}
+
+</script>
+
+</body>
+</html>
