@@ -31,30 +31,18 @@ body {
 	width: 100%;
 	padding: 0;
 }
-#list p {
-	width: 30px;
-	margin: 0px auto;
+#list span {
 	color: white;
 	font-style: oblique;
 	font-weight: 100;
 	font-size: 40px;
-	display: inline-block;
+	display: block;
 	list-style-type: none;
-	text-align: center;
 }
-@media screen and (max-width: 959px) {
-	#list p {
+@media screen and (min-width: 576px) {
+	#list span {
+		display: inline-block;
 		width: 30px
-	}
-}
-@media screen and (max-width: 640px) {
-	#list p {
-		width: 30px
-	}
-}
-@media screen and (max-width: 450px) {
-	#list p {
-		width: 200px
 	}
 }
 #list ul {
