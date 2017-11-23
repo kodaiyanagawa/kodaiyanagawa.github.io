@@ -263,6 +263,15 @@ body {
 .section img:hover {
 	opacity: 0.8;
 }
+.img-grid-item {
+	max-width: 720px;
+	width: 100%;
+	margin: 0 auto 10px;
+}
+.img-full {
+	width: 100%;
+	display: block;
+}
 
 
 
