@@ -17,6 +17,10 @@
 		<div id="list">
 			<ul>
 				<li class="blinking">
+					<a href="index.html">Home</a>
+				</li>
+				<span>/</span>
+				<li class="blinking">
 					<a href="videopage.html">Video</a>
 				</li>
 				<span>/</span>
@@ -40,25 +44,25 @@
 	<div id="main-features">
 
 		<div class="img-grid-item">
-			<a href="#vid-1" rel="modal:open"><img class="img-full" src="Images/icon_images/2017Demoreel.png" alt="2017 Demoreel"></a>
+			<a href="#vid-1" rel="modal:open"><img class="img-full" data-src="Images/icon_images/2017Demoreel.png" alt="2017 Demoreel"></a>
 			<div id="vid-1" class="modal">
 				<a href="#close-modal" rel="modal:close" class="close-modal2">&times;</a>
 				<div class="inner">
-					<iframe src="https://player.vimeo.com/video/202174201" width="720" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="Movie"></iframe>
+					<iframe data-src="https://player.vimeo.com/video/202174201" width="720" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen class="Movie"></iframe>
 				</div>	
 				<p>Demoreel 2017</p>
 			</div>
 		</div>
 
 		<div class="img-grid-item">
-			<a href="#vid-2" rel="modal:open"><img class="img-full" src="Images/icon_images/LateNight.png" alt="Late Night"></a>
+			<a href="#vid-2" rel="modal:open"><img class="img-full" data-src="Images/icon_images/LateNight.png" alt="Late Night"></a>
 			<div id="vid-2" class="modal">
 				<a href="#close-modal" rel="modal:close" class="close-modal2">&times;</a>
 				<div class="inner">
-					<iframe src="https://player.vimeo.com/video/217249259" width="720" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-					<img src="Images/Artworks/LateNight1.jpg">
-					<img src="Images/Artworks/LateNight2.jpg">
-					<img src="Images/Artworks/LateNight3.jpg">
+					<iframe data-src="https://player.vimeo.com/video/217249259" width="720" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<img data-src="Images/Artworks/LateNight1.jpg">
+					<img data-src="Images/Artworks/LateNight2.jpg">
+					<img data-src="Images/Artworks/LateNight3.jpg">
 				</div>	
 				<p>Late Night / 2017</p>
 				<p>Directed by Kodai Yanagawa</p>
@@ -68,22 +72,22 @@
 		</div>
 
 		<div class="img-grid-item">
-			<a href="#vid-3" rel="modal:open"><img class="img-full" src="Images/icon_images/Runner.png" alt="Runner"></a>
+			<a href="#vid-3" rel="modal:open"><img class="img-full" data-src="Images/icon_images/Runner.png" alt="Runner"></a>
 			<div id="vid-3" class="modal">
 				<a href="#close-modal" rel="modal:close" class="close-modal2">&times;</a>
 				<div class="inner">
-					<iframe src="https://player.vimeo.com/video/165080250" width="720" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+					<iframe data-src="https://player.vimeo.com/video/165080250" width="720" height="480" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 				</div>	
 				<p>Runner / 2016</p>
 			</div>
 		</div>
 
 		<div class="img-grid-item">
-			<a href="#vid-4" rel="modal:open"><img class="img-full" src="Images/icon_images/Untitled.png" alt="Untitled"></a>
+			<a href="#vid-4" rel="modal:open"><img class="img-full" data-src="Images/icon_images/Untitled.png" alt="Untitled"></a>
 			<div id="vid-4" class="modal">
 				<a href="#close-modal" rel="modal:close" class="close-modal2">&times;</a>
 				<div class="inner">
-					<iframe width="720" height="480" src="https://www.youtube.com/embed/cSsmll5ORWY" frameborder="0" allowfullscreen></iframe>
+					<iframe width="720" height="480" data-src="https://www.youtube.com/embed/cSsmll5ORWY" frameborder="0" allowfullscreen></iframe>
 				</div>
 				<p>Untitled / 2016</p>
 			</div>
@@ -100,6 +104,23 @@
 		</div>
 		
 	</footer>
+
+<script type="text/javascript">
+	[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+
+	[].forEach.call(document.querySelectorAll('iframe[data-src]'),    function(iframe) {
+  iframe.setAttribute('src', iframe.getAttribute('data-src'));
+  iframe.onload = function() {
+    iframe.removeAttribute('data-src');
+  };
+});
+
+</script>
 
 </body>
 </html>
