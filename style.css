@@ -288,6 +288,7 @@ body {
 
 
 #profile {
+	width: 100%;
 	margin: 0px auto;
 	padding: 0px;
 	text-align: center;
@@ -309,7 +310,7 @@ body {
 }
 @media screen and (max-width: 320px) {
 	#profile img {
-		width: 130%
+		width: 100%
 	}
 }
 #aboutme {
