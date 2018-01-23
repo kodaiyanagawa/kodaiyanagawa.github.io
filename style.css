@@ -1,10 +1,22 @@
 body {
-	background: url(Images/icon_images/Red_BG_sub.jpg) repeat center center fixed;
+	background-color: blue;
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 auto;
+	animation: FadeIn 20s ease-in-out forwards;
 }
+
+@keyframes FadeIn {
+  from {
+    background-color: blue;
+  }
+  
+  to {
+    background-color: pink;
+  }
+}
+
 #top {
 	position: center;
 	border: none;
@@ -19,8 +31,10 @@ body {
 	text-align: center;
 }
 #logo img {
-	transform: scale(0.7);
+	transform: scale(0.95);
 	width: 100%;
+	margin: 0px auto;
+	text-align: center;
 }
 #menu {
 	overflow: hidden;
