@@ -152,7 +152,37 @@ body {
 	vertical-align: middle;
 	position: relative;
 	z-index: 2;
-	max-width: 800px;
+	max-width: 600px;
+	box-sizing: initial;
+	width: 90%;
+	background: #fff;
+	padding: 0px 3% 50px 3%;
+	margin: 0 auto;
+	border-radius: 0px;
+	text-align: center;
+	border-radius: 4px;
+}
+@media screen and (max-width: 959px) {
+	.modal {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 640px) {
+	.modal {
+		width: 80%;
+	}
+}
+@media screen and (max-width: 450px) {
+	.modal {
+		width: 100%;
+	}
+}
+.modalwide{
+	display: none;
+	vertical-align: middle;
+	position: relative;
+	z-index: 2;
+	max-width: 1200px;
 	box-sizing: initial;
 	width: 90%;
 	background: #fff;
